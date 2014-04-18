@@ -1,55 +1,87 @@
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
 		<title>Ashivni Shekhawat - Web Page</title>
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/geometry.css">
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/divLoader.js"></script>
 	</head>
 
 	<body>
+		<div id="headerContainer">
+		<br>
 		<div class="header">
 			<span id="name">Ashivni Shekhawat</span> 
-			<div class="nav">
+			<div class="nav" id="nav">
 				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Research
+					<li><a href="pages/home.html">Home</a></li>
+					<li><a href="pages/research.html">Research</a>
 						<ul>
-							<li>High entropy alloys</li>
-							<li>Biomaterials</li>
-							<li>Statistics of Fracture</li>
-							<li>Critical Phenomena in Fracture</li>
-							<li>Avalanches in VO2 </li>
-							<li>Extreme Value Statistics</li>
-							<li>Fracture in Graphene</li>
+							<li> <a href="pages/hea.html">High entropy alloys</a></li>
+							<li> <a href="pages/bio.html">Biomaterials </a></li>
+							<li> <a href="pages/statisticsF.html">Statistics of Fracture </a></li>
+							<li> <a href="pages/criticalP.html">Critical Phenomena in Fracture </a></li>
+							<li> <a href="pages/mit.html">Avalanches in V02 </a></li>
+							<li> <a href="pages/evs.html">Extreme Value Statistics </a></li>
+							<li> <a href="pages/graphene.html">Fracture in Graphene </a></li>
 						</ul>
 					</li>
-					<li>Publications</li>
-					<li>CV</li>
-					<li>Blog</li>
-					<li>Contact</li>
+					<li><a href="pages/publications.html">Publications</a></li>
+					<li><a href="pages/cv.html">CV</a></li>
+					<li><a href="pages/blog.html">Blog</a></li>
 				</ul>
 			</div>
 		</div>
-		<div id="content">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		<br>
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		<br>
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		<br>
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		<br>
-		<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
-		<div id="sideBar">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
+		<div id="mainContainer">
+			<div id="content">
+				<p id="intro">
+				Ashivni Shekhawat <br>
+				<a href="http://millerinstitute.berkeley.edu/current_mf.php">Miller Fellow </a><br>
+				Department of Material Science,<br>
+				University of California, Berkeley.<br>
+				Education: PhD, Cornell University with Prof. James P. Sethna. <br>
+				Contact: ashivni AT berkeley dot edu, 62-243 LBNL.
+				</p>
 
+				<p id="rh1">Research </p><br>
+				<p id="researchI">
+				Fracture, High entropy alloys, Critical phenomena, Biomaterials.
+				</p>
+				<div class="pictureContainer">
+					  <img class="pic" src="images/fccSM.jpg" alt="FCC HEA">
+					  <img class="pic" src="images/nacreSM.jpg" alt="Nacre">
+					  <img class="pic" src="images/stressConcSM.jpg" alt="Stress Concentration">
+					  <img class="pic" src="images/fuseNetworkSM.jpg" alt="Fuse Networks">
+					  <img class="pic" src="images/fracturePhaseSM.jpg" alt="Fracture Phase Diagram">
+				</div>
+				<p class="description">
+				What makes materials tough or strong? Can we gain an understanding of the basic 
+				design principles that lead to better mechanical performance of materials and 
+				use it to design better materials? The goal of end-to-end computational 
+				design of materials is beyond our reach at the moment, but we are making
+				important progress in understanding larger and larger chunks of the puzzle.
+				In my work I try to understand why certain materials behave the way they 
+				do when they are subjected to mechanical loading. 
+				</p> <br>
+				<p class="description">
+				I am a Miller Fellow at UC Berkeley. My current research is on fracture and deformation mechanisms in 
+				high entropy alloys and biological materials. In the past I have worked on statistical models of fracture, 
+				shape memory alloys, and nonlinear dynamics and control systems. I am interested in all things science and technology. 
+				I think about social issues and would like to learn something about economics and something about robotics.
+			</p>
+			<p>
+			</div>
+				<div id="sideBar">
+		<img id="myImage" src="images/me.jpg" alt="Ashivni Shekhawat">
+		<span id="aboutMe"> Ashivni Shekhawat. Miller Fellow, Department of Material Science, UC Berkeley. </span> <br><br>
+		<h1> Blog </h1>
+			</div>
+		</div>
+		<div id="footer"> &copy; Ashivni Shekhawat. 2014.</div>
 	</body>
 
 </html>
