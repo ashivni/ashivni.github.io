@@ -5,6 +5,13 @@ body {
 	margin: 0;
 	padding: 0;
 	z-index:0;
+	height: 100%;
+	width: 100%;
+}
+
+html {
+	height: 100%;
+	width: 100%;
 }
 
 .header {
@@ -102,7 +109,9 @@ body {
 }
 
 #myImage{
-	float:left;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
 }
 
 #load {
@@ -129,7 +138,7 @@ body {
 }
 
 #content .pic{
-	height: 7em;
+	width: 12%;
 }
 
 #content .pictureContainer{
