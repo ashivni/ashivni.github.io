@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="/css/geometry.css">
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/divLoader.js"></script>
+		<script type="text/javascript" src="js/blogLoader.js"></script>
+		<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+
 	</head>
 
 	<body>
@@ -31,25 +34,19 @@
 					</li>
 					<li><a href="pages/publications.html">Publications</a></li>
 					<li><a href="pages/cv.html">CV</a></li>
-					<li><a href="pages/blog.html">Blog</a></li>
 				</ul>
 			</div>
 		</div>
 		</div>
 		<div id="mainContainer">
 			<div id="content">
-
-				<p id="rh1">Research </p><br>
-				<p id="researchI">
-				Fracture, High entropy alloys, Critical phenomena, Biomaterials.
-				</p>
-				<div class="pictureContainer">
-					  <img class="pic" src="images/fccSM.jpg" alt="FCC HEA">
-					  <img class="pic" src="images/nacreSM.jpg" alt="Nacre">
-					  <img class="pic" src="images/stressConcSM.jpg" alt="Stress Concentration">
-					  <img class="pic" src="images/fuseNetworkSM.jpg" alt="Fuse Networks">
-					  <img class="pic" src="images/fracturePhaseSM.jpg" alt="Fracture Phase Diagram">
+				<div class="pictureContainer" id="s1">
+				<figure>
+					  <img id="pic" src="images/fccSM.jpg" alt="FCC HEA"> 
+					  <figcaption id="picCap">High Entropy Alloy</figcaption>
+				</figure>
 				</div>
+				<div id="textContent">
 				<p class="description">
 				What makes materials tough or strong? Can we gain an understanding of the basic 
 				design principles that lead to better mechanical performance of materials and 
@@ -65,18 +62,23 @@
 				shape memory alloys, and nonlinear dynamics and control systems. I am interested in all things science and technology. 
 				I think about social issues and would like to learn something about economics and something about robotics.
 			</p>
-			<p>
 			</div>
-				<div id="sideBar">
-		<img id="myImage" src="images/me.jpg" alt="Ashivni Shekhawat"><br>
-		<span id="aboutMe"> 
-		Ashivni Shekhawat. 
-		<a href="http://millerinstitute.berkeley.edu/current_mf.php">Miller Fellow,</a><br>
-		Department of Material Science, UC Berkeley. 
-		PhD, Cornell University with Prof. James P. Sethna. 
-		Contact: ashivni AT berkeley dot edu, 62-243 LBNL.
-		</span> <br><br><br>
-		<strong> Blog </strong>
+			</div>
+			<div id="sideBar">
+				<img id="myImage" src="images/me.jpg" alt="Ashivni Shekhawat"><br>
+				<div id="aboutMeBar"> 
+					Ashivni Shekhawat. 
+					<a href="http://millerinstitute.berkeley.edu/current_mf.php">Miller Fellow,</a><br>
+					Department of Material Science, UC Berkeley. 
+					PhD, Cornell University with Prof. James P. Sethna.<br> 
+					Contact: ashivni AT berkeley dot edu, 62-243 LBNL.
+				</div>
+				<div id="blogBar">
+					<h1> Blog Post </h1>
+					<span class="bTitle" onClick="loadBlog('bl1')"> The making of a website.</span>
+					<span class="tags"> Apr 19 '14. Tags: javascript, css, jquery, html5</span><br>
+
+				</div>
 			</div>
 		</div>
 		<div id="footer"> &copy; Ashivni Shekhawat. 2014.</div>

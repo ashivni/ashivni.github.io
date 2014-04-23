@@ -1,8 +1,7 @@
 body {
-	font-family: 'Open Sans', 'News Gothic', 'Helvetica';
+	font-family: 'Open Sans', 'News Gothic', 'Helvetica', sans-serif;
 	color: #777;
-	background-color: rgb(240,240,232);
-	background-color: #0769AD;
+	background-color: #998C7C;
 	padding 0;
 }
 
@@ -10,9 +9,14 @@ p {
 	margin: 0;
 }
 
+.blogSum span {
+	color: blue;
+}
+
 .header {
-	background-color: rgb(216,216,208);
-	padding: 2em 0em 0em 20%;
+	background-color: rgb(175,30,45);
+	padding: 2em 0em 0em 10%;
+	color: white;
 }
 
 .header a:link { text-decoration:none; }
@@ -23,8 +27,8 @@ p {
 }
 
 .nav {
-	background-color: rgb(0,0,0);
-	padding: 0 0 0 20%;
+	background-color: #998C7C;
+	padding: 0 0 0 10%;
 	margin: 0;
 }
 
@@ -36,7 +40,6 @@ p {
 .nav ul li {
 	font: bold 0.88em/1em sans-serif;
 	text-align: middle center;
-	background-color: rgb(0,0,0);
 	color: rgb(256,256,256);
 	cursor: pointer;
 	padding: .7em 6em .6em 0.5em;
@@ -110,7 +113,10 @@ p {
 #sideBar{
 	text-align: top;
   background-color: rgb(129,129,124);
+	background-color: #B2AA70;
+	background-color: #CCC1B2;
 	color: rgb(255,255,255);
+	color: black;
 	/*border-radius: 5px;
 	border: solid 1px #e2e0d8;*/
 	border-top: none;
@@ -123,8 +129,40 @@ p {
 	padding: 0px 4px 0px 0px;
 }
 
-#sideBar #aboutMe {
-	font-size: 12px;
+#sideBar #aboutMeBar {
+	font-size: 0.7em;
+	border-bottom-style: dotted;
+	border-bottom-color: black;
+	padding: 0 0 1em 0;
+	border-bottom-width:1px;
+	color: #0C1C8C;
+}
+
+#sideBar #blogBar h1{
+	font-size: 1.2em;
+	color: #141654;
+}
+
+#sideBar #blogBar {
+	margin: 0;
+	font-size: 0.8em;
+}
+
+#sideBar #blogBar .bTitle:hover{
+  background-color: rgb(149,149,149);
+	cursor: pointer;
+}
+
+#sideBar #blogBar .bTitle{
+	color: #0C1C8C;
+}
+
+#sideBar #blogBar .tags{
+  font-size: 0.7em;
+	color: black;
+}
+
+#sideBar #blogBar #det:hover{
 }
 
 #load {
@@ -134,13 +172,12 @@ p {
 
 #footer {
 	background-color: rgb(0,0,0);
-	padding: 0;
+	background-color: grey;
+	color: black;
+	padding: 1em 0 0 0;
 	text-align: center;
 }
 
-#content .pic{
-	padding: 3em 1em 3em 1em;
-}
 
 #intro{
 	font-size: 0.8em;
@@ -173,4 +210,18 @@ p.description {
 .pages{
 	line-height: 1.5em;
 	font-size: 0.9em;
+}
+
+.blogSum h1{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.blogSum {
+	border-top-style:dashed;
+	border-bottom-style:dashed;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	margin: 2em 0 2em 0;
+	padding: 0.5em 0 2em 0;
 }
