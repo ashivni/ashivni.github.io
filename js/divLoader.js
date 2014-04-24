@@ -33,19 +33,19 @@ var randomimages=new Array()
 var captions = new Array()
 
 randomimages[0]="images/fccSM.jpg"
-captions[0] = "High Entropy Alloy"
+captions[0] = "High Entropy Alloys"
 
 randomimages[1]="images/nacreSM.jpg"
-captions[1] = "Nacre: Nature's flaw tolerant architecture"
+captions[1] = "Biomaterials"
 
 randomimages[2]="images/fracturePhaseSM.jpg"
-captions[2] = "Phase diagram of brittle fracture"
+captions[2] = "Phase Transitions"
 
 randomimages[3]="images/fuseNetworkSM.jpg"
-captions[3] = "A fuse network"
+captions[3] = "Statistical Models"
 
 randomimages[4]="images/stressConcSM.jpg"
-captions[4] = "Stress field in a fuse network simulation"
+captions[4] = "Massive Simulations"
 
 var preload=new Array()
 
