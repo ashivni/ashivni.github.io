@@ -1,22 +1,157 @@
 <div id="c1">
-	Your network is too slow. 
-	<br>.
-	<br>.
-	<br>.
-	<br>
-	Check later...   <img src="images/ajax-loader.gif" alt="Loading ">
-	<br>.
-	<br>.
-	<br>.
-	<br>.
-	<br>.
-	<br>.
-	<br>.
-	<br>.
-	<br>.
-	<br>.
-	<br>.<br>
-	I mean... I am still working on this.<br>
-	But, your network is slow, too.
+	<h1> Nacre </h1>
+	<figure >
+		<img class="pageFig" src="images/nacre.jpg" alt="SEM image of nacre (source: wikipedia) "> 
+		  <figcaption >Figure 1. SEM image of nacre (source: wikipedia)</figcaption>
+	</figure>
 
+	<p>
+	"Nacre" is the material that sea shells are made of. Anyone who has played with sea shells
+	as a child knows that they are incredibly tough and strong. Why is this interesting? 
+	Afterall, nacre is not the toughest or the strongest material known to man (steel is way tougher,
+	diamond is way stronger). 
+	While the absolute toughness of nacre is not interesting in itself, it is rather 
+	interesting when compared to the toughness of the materials that nacre is made up of. 
+	So, what 
+	exactly is nacre made up of? As it turns out, over 95% of nacre is black board
+	chalk (aragonite). Now, chalk is neither hard nor tough. What of the remaining 5% or so?
+	The remaining 5% is a sort of organic glue that holds the pieces of chalk together. 
+	And thats the mystery: How does nature take two rather ordinary ingredients, namely 
+	chalk and some glue, and make something incredibly strong and tough like sea shells?
+	This mystery, or some version of it, exists in all the nature's structural materials,
+	including wood, tooth, bones, turtle shells, antlers, and so on.
+	</p>
+	<p>
+	The high magnification SEM (Scanning Electorn Microscope) shown above (Fig. 1) 
+	sheds some light on the actitecture of nacre. As the figure shows, nacre is
+	made out of thin bricks of aragonite arranged in a manner similar to the 
+	bricks in a wall. This is the so-called brick and mortar structure. The role
+	of the mortar is played by the organic glue. Figure 2 shows an idealized
+	2D cross-section of this structure. Note that this figure is not accurate 
+	in scale. In reality the mortar (organic glue) layer is much thinner, 
+	and the bricks have a much higher aspect ratio. As one can imagine, this 
+	structure can make crack propagation tougher because the strain can get 
+	localized in the ductile mortar phase, and because cracks can get deflected
+	at any of the  multiple interfaces.
+	</p>
+	<figure >
+		<img class="pageFig" src="images/tiling.png" alt="2D idealized nacre"> 
+		  <figcaption >Figure 2. Idealized 2D cross-section of nacre</figcaption>
+	</figure>
+
+	<h2> Unit Cell Analysis</h2>
+	<figure >
+		<img class="pageFig" src="images/unitCell.png" alt="Unit cell of nacre"> 
+		  <figcaption >Figure 3. Idealized unit cell of nacre's brick and mortar structure</figcaption>
+	</figure>
+	<p>
+	A very simple analysis can be used to obtain the elastic moduli
+	of materials with a brick and mortar structure. In this analysis 
+	we make a number of simplifying assumptions. We assume that the 
+	thickness of the mortar is small compared to the thickness of the 
+	bricks, which in turn is small compared to the width of the bricks, i.e,
+
+	$$ t_1, t_2 \ll h \ll w.$$
+
+	The validity of these assumptions is evident from the observed geometry 
+	of nacre. Further, we assume that the bricks can be treated as 
+	rigid, i.e., all the strain is localized in the mortar phase. 
+	This assumption is also well justified since the bricks 
+	are much stronger than the mortar phase. We will consider the
+	implications and limitations of this assumption in detail later.
+	For the purpose of this analysis we assume that the unit cell 
+	has a vertical axis of symmetry, i.e., \(e = 0\) in figure 3. The 
+	resulting unit cell is shown in figure 4.
+	</p>
+	<figure >
+		<img class="pageFig" src="images/symmUnitCell.png" alt="Symmetric Unit cell of nacre"> 
+		  <figcaption >Figure 4. Idealized unit cell of nacre with a vertical axis of symmetry</figcaption>
+	</figure>
+	<figure >
+
+	<p>
+	The unit cell shown in figure 4 has a horizontal axis of symmetry as well. This is somewhat difficult to 
+	see in figure 4. However, if we draw the same unit cell in a different manner, then it becomes apparent (figure 5).
+	Why do we bother? It turns out that symmetry is very important in theory of elasticity. While a general 
+	linear elastic material in 3D is characterized by 21 constants, a fully isotropic material (material with infinite symmetry) 
+	is characterized by just 2 constants! This is a huge reduction in complexity. For our analysis we only consider 
+	a 2D structure of nacre. A general elastic 2D material is characterized by 6 elastic constants. How many constants can we 
+	do away with based on the symmetry of the unit cell shown in figure 5?
+	</p>
+		<img class="pageFig" src="images/fullSymmUnitCell.png" alt="Unit cell of nacre"> 
+		  <figcaption >Figure 5. The idealized unit cell of nacre has a vertical as well as a horizontal axis of symmetry</figcaption>
+	</figure>
+	<p>
+	Let us first see why a general 2D material is characterized by 6 elastic contants. There are several ways of 
+	thinking about this. I prefer to think as follows. The elastic constants give mapping between the 
+	stress and the strain. The matrix representing this linear map must be symmetric since it is obtained 
+	as a second gradient of the energy density function. The most general such mapping can be written as
+	$$	
+		\begin{bmatrix}\sigma_{11} \\ \sigma_{22} \\ \sigma_{12} \end{bmatrix}	= 
+		\begin{bmatrix} c_{11} & c_{12} & c_{13} \\ c_{12} & c_{22} & c_{23} \\ c_{13} & c_{23} & c_{33} \end{bmatrix}	
+		\begin{bmatrix}\epsilon_{11} \\ \epsilon_{22} \\ 2\epsilon_{12} \end{bmatrix},	
+	$$
+	involving a total of 6 independent elastic constants. Now, due to the vertical symmetry axis, a strain 
+	in the 11-direction cannot lead to a stress response in the 12-direction. This gives \(c_{13} = 0\). Similarly,
+	due to the horizontal symmetry axis we get \(c_{23} = 0\). We further assume that the mortar material has 
+	zero poison's ratio. This combined with the assumption of rigid bricks leads to \(c_{12} = 0\). This massacre 
+	of elastic constants leaves us with 3 unknown constants, and the stress-strain relation reads
+	$$	
+		\begin{bmatrix}\sigma_{11} \\ \sigma_{22} \\ \sigma_{12} \end{bmatrix}	= 
+		\begin{bmatrix} c_{11} & 0 & 0 \\ 0 & c_{22} & 0 \\ 0 & 0 & c_{33} \end{bmatrix}	
+		\begin{bmatrix}\epsilon_{11} \\ \epsilon_{22} \\ 2\epsilon_{12} \end{bmatrix}.	
+	$$
+	Of all our assumptions, the one leading to \( c_{12} = 0 \) is perhaps the weakest, while the vertical symmetry 
+	axis is the second weakest. We stick with these for the time being in favor of simplicity. Our next task is 
+	to find the 3 remaining elastic constants. For this purpose we further assume \( t_1 = t_2 = t \).
+	</p>
+
+	<p>
+	The analysis here is rather simple and covers only the elastic regime, however, the assumption of rigid bricks simplifies the 
+	problem a lot, and there is hope that under this assumption one can solve the more general elastic problem. 
+	Let us first apply a uniaxial strain \(\epsilon_{11}\). The net deformation of the unit cell in the 1-direction 
+	is then \(\delta = (w + t)\epsilon_{11}\). Then, the elastic energy of the unit cell (per unit depth)
+	can be written as 
+	\begin{equation}
+	\psi(\delta) = 2 h t \left( \frac{1}{2} E \left(\frac{\delta}{t}\right)^2 \right) + 4 \frac{w}{2}t \left(\frac{1}{2}G\left(\frac{\delta}{2t}\right)^2 \right),
+	\end{equation}
+	where \(E, G\) are the Young's modulus and the shear modulus of the mortar, respectively. The effective 
+	modulus of the unit cell in the 1 direction is \( c_{11}\), thus the corresponding effective energy would be 
+	\begin{equation}
+	\psi(\delta) = 2(h+t)(w+t)  \left(\frac{1}{2}c_{11}\left(\frac{\delta}{w+t}\right)^2 \right).
+	\end{equation}
+	Equating the above two expressions, we get
+	\begin{equation}
+	c_{11} = E \frac{h}{t}\frac{w+t}{h+t} \left( 1 + \frac{wG}{4hE}\right) \approx E \frac{w}{t}\left( 1 + \frac{wG}{4hE}\right) \approx G\frac{w^2}{4ht}.
+	\end{equation}
+	Similarly, if we apply a uniaxial strain \( \epsilon_{22} \), then the deformation in the 
+	2-direction is \( \delta = 2(h+t)\epsilon_{22} \), and the net elastic energy of the unit cell (per unit depth)
+	is approximately
+	\begin{equation}
+	\psi(\delta) = 4\frac{wt}{2}\left( \frac{1}{2}E\left(\frac{\delta}{2t}\right)^2\right),
+	\end{equation}
+	while the effective energy for the cell is (approximately)
+	\begin{equation}
+	\psi(\delta) = 2hw \left( \frac{1}{2}c_{22}\left(\frac{\delta}{2h}\right)^2\right).
+	\end{equation}
+	Equating the above two expressions we get 
+	\begin{equation}
+	c_{22} \approx  E \frac{h}{t}.
+	\end{equation}
+	Finally, by using similar arguments for a simple \( \epsilon_{12} \) deformation, we get 
+	\begin{equation}
+	c_{12} \approx G\frac{h}{2t}
+	\end{equation}
+	</p>
+	<p>
+	How good are the assumptions that we made in the above derivations? The geometrical assumptions \( t \ll h \ll w\) are 
+	fairy well justified. What about the assumption of rigid bricks? That assumption is well justified so long as 
+	the strain is mostly localized in the mortar. Another way of thinking about this is that if nacre is much less 
+	stiffer than aragonite then our approximations are good. It turns out that while nacre is less stiffer 
+	than aragonite, its not much less stiffer. Thus our approximations are questionable. The model 
+	can thus be improved upon by including more realistic deformation. In fact, 
+	Begley et. al. have done such an analysis for a uniaxial deformation. This also shows that nature does not work 
+	to make our analysis simpler! 
+	</p>
 </div>
+
