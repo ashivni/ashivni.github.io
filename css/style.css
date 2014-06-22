@@ -225,3 +225,11 @@ p.description {
 	margin: 2em 0 2em 0;
 	padding: 0.5em 0 2em 0;
 }
+
+.soundBite{
+	color: blue;
+	cursor: pointer;
+}
+.soundBite:hover{
+  background-color: rgb(149,149,149);
+}

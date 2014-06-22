@@ -1,31 +1,4 @@
-$(document).ready(function() {
-	var p=window.location.hash;
-	if (p=='#research')
-	{
-		$('#content').load('pages/research.html #c1');
-	}
-	if (p=='#pub')
-	{
-		$('#content').load('pages/publications.html #c1');
-	}
-	if (p=='#cv')
-	{
-		$('#content').load('pages/cv.html #c1');
-	}
-						   
-	$('#nav li a').click(function(){
-		var toLoad = $(this).attr('href')+' #c1';
-		$("#content").load(toLoad, function() {
-			$('body').scrollTop(1);
-			MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-			});
-		return false;
-	});
-
-
-
-});
-
+//MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 
 var delay=3000 //set delay in miliseconds
 var curindex=0

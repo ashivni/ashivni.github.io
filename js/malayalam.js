@@ -51,15 +51,15 @@ function malayLoad(){
 	}
 
 	aud=document.getElementById("player");
-	$("#oggsrc").attr("src", 'langs/malayRecords/'+availableText[loc][1]+'.ogg');
-	$("#mp3src").attr("src", 'langs/malayRecords/'+availableText[loc][1]+'.mp3');
-	$("#embedsrc").attr("src", 'langs/malayRecords/'+availableText[loc][1]+'.mp3');
+	$("#oggsrc").attr("src", '/langs/malayRecords/'+availableText[loc][1]+'.ogg');
+	$("#mp3src").attr("src", '/langs/malayRecords/'+availableText[loc][1]+'.mp3');
+	$("#embedsrc").attr("src", '/langs/malayRecords/'+availableText[loc][1]+'.mp3');
 	if (aud.canPlayType("audio/mp3")){
-		aud.src = 'langs/malayRecords/'+availableText[loc][1]+'.mp3';
+		aud.src = '/langs/malayRecords/'+availableText[loc][1]+'.mp3';
 		aud.load();//suspends and restores all audio element
 	}
 	else if(aud.canPlayType("audio/ogg")){
-		aud.src = 'langs/malayRecords/'+availableText[loc][1]+'.ogg';
+		aud.src = '/langs/malayRecords/'+availableText[loc][1]+'.ogg';
 		aud.load();
 	}
 }
