@@ -27,7 +27,8 @@ p {
 }
 
 .nav {
-	background-color: #998C7C;
+  background-color: #FCFCFA;
+	/*background-color: #998C7C;*/
 	padding: 0 0 0 10%;
 	margin: 0;
 }
