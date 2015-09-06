@@ -52,8 +52,8 @@ p {
 }
 
 .nav ul li:hover {
-	background: #555;
-	color: #fff;
+	background: blue;
+	color: black;
 }
 
 .nav ul li a:link { text-decoration:none; color:black;}
