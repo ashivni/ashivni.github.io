@@ -16,14 +16,41 @@ html {
 
 .header {
 	position: fixed;
-	left: 0;
-	right: 0;
+	left: 10%;
+	right: 10%;
 	top:0;
 	margin:0;
-	width: 100%;
+	width: 80%;
 	height: 8em;
 	vertical-align: middle;
 	z-index: 4;
+}
+
+#mainContainer{
+	position: relative;
+	left: 10%;
+	right: 10%;
+	top: 0;
+	width: 80%;
+	margin: 0;
+	z-index: 1;
+	height: 400em;
+}
+
+#contentBak {
+	position: absolute;
+	left: 0;
+	width: 78%;
+	height: 100%;
+	z-index: 2;
+}
+
+#content {
+	position: relative;
+	float: left;
+	width: 71%;
+	height: 100%;
+	z-index: 3;
 }
 
 #name {
@@ -72,32 +99,6 @@ html {
 	display: block;
 }
 
-#mainContainer{
-	position: relative;
-	left: 10%;
-	right: 10%;
-	top: 0;
-	width: 80%;
-	margin: 0;
-	z-index: 1;
-	height: 400em;
-}
-
-#contentBak {
-	position: absolute;
-	left: 0;
-	width: 78%;
-	height: 100%;
-	z-index: 2;
-}
-
-#content {
-	position: relative;
-	float: left;
-	width: 71%;
-	height: 100%;
-	z-index: 3;
-}
 
 #content p{
 	margin: 0 0 1em 0;
